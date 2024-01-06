@@ -3,8 +3,7 @@ import { Inter } from "next/font/google";
 import BasicSample from "./basic-sample";
 import AdaptedProps from "./adapted-props";
 import { TitleType } from "./adapted-props/adaptedPropsType";
-
-const inter = Inter({ subsets: ["latin"] });
+import StyledComponent from "./styled-component/styledComponent";
 
 export default function Home() {
   const adaptedPropData: TitleType = { color: "#ff0000" };
@@ -19,6 +18,7 @@ export default function Home() {
       <main>
         <BasicSample />
         <AdaptedProps color={adaptedPropData.color} />
+        <StyledComponent />
       </main>
     </>
   );
