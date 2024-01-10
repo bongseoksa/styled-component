@@ -4,6 +4,7 @@ import BasicSample from "./basic-sample";
 import AdaptedProps from "./adapted-props";
 import { TitleType } from "./adapted-props/adaptedPropsType";
 import StyledComponent from "./styled-component/styledComponent";
+import PseudoAndNesting from "./PseudoAndNesting/PseudoAndNesting";
 
 export default function Home() {
   const adaptedPropData: TitleType = { color: "#ff0000" };
@@ -19,6 +20,7 @@ export default function Home() {
         <BasicSample />
         <AdaptedProps color={adaptedPropData.color} />
         <StyledComponent />
+        <PseudoAndNesting />
       </main>
     </>
   );
